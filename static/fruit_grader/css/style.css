@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
+body {
+    background: #ebeff2;
+    font-family: "Exo 2";
+}
+
+#formContainer{
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+#submitButtonContainer{
+    height: 60px;
+    width: 240px;
+    margin: 50px auto 0;
+}
+
+#submitButton{
+    background-color: #65BC7C;
+    color: white;
+    font-size: 25px;
+    height: 60px;
+    width: 240px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.zone {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    background: radial-gradient(ellipse at center,#6EC083 0,#5CB874 100%);
+    width: 40%;
+    height: 45%;
+    border: 5px dashed white;
+    text-align: center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 .25em 0 rgba(0,0,0,0.25);
+}
+.zone .btnCompression .active {
+    background: #6EC083;
+    color: white;
+}
+.zone i {
+    text-align: center;
+    font-size: 10em;
+    color: #fff;
+    margin-top: 50px;
+}
+.zone .selectFile {
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+    width: 200px;
+}
+.zone label, .zone input {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.zone label {
+    background: #fff;
+    color: #6EC083;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 400;
+    box-shadow: 0 1px 1px gray;
+}
+.zone input[type=file] {
+    opacity: 0;
+}
+.zone.in {
+    color: white;
+    border-color: white;
+    background: radial-gradient(ellipse at center,#6EC083 0,#5CB874 100%);
+}
+.zone.in i {
+    color: #fff;
+}
+.zone.in label {
+    background: #fff;
+    color: #6EC083;
+}
+.zone.hover {
+    color: gray;
+    border-color: white;
+    background: #fff;
+    border: 5px dashed gray;
+}
+.zone.hover i {
+    color: #6EC083;
+}
+.zone.hover label {
+    background: #fff;
+    color: #6EC083;
+}
+.zone.fade {
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}

@@ -1,0 +1,8 @@
+torch
+opencv-python
+Django
+djangorestframework
+boto3
+botocore
+cryptography
+fernet
