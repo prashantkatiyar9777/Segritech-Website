@@ -1,8 +1,1 @@
-torch
-opencv-python
-Django
-djangorestframework
-boto3
-botocore
-cryptography
-fernet
+numpy==1.24.2

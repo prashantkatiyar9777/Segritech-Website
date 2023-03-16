@@ -13,8 +13,7 @@ SECRET_KEY = 'django-insecure-_6eav3n_!q%xm$vgvcvlt628y9c$4&+hn8i=_ogki4io^6!dt3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = [*]
 
 # Application definition
 
@@ -122,7 +121,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'fruit_grader', "media")
 
 
 
-
-import os
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
